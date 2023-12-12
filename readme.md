@@ -13,6 +13,7 @@ spin up many instances of Kura, and use in container env-vars to connect them to
 
 ### Exposed Properties Matrix
 property name | default value | Variable Name in snapshot | Enviroment Variable 
+|__________|__________|__________|__________|
 broker url | mqtt://broker-url:1883/ | {% BROKER_URL %} | BROKER_URL
 auto connect on startup | false | {% AUTO_CONNECT_ON_STARTUP %} | AUTO_CONNECT_ON_STARTUP
 device custom name | Docker Device | {% DEVICE_CUSTOM_NAME %} | DEVICE_CUSTOM_NAME
