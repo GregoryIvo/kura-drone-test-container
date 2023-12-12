@@ -1,0 +1,354 @@
+
+version: "2"
+
+services:
+
+  kura-1:
+    image: kura-drone:latest
+    container_name: kura-1
+    ports:
+      - "443:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice1
+      - DEVICE_DISPLAY_NAME=testdevice1
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-2:
+    image: kura-drone:latest
+    container_name: kura-2
+    ports:
+      - "444:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice2
+      - DEVICE_DISPLAY_NAME=testdevice2
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-3:
+    image: kura-drone:latest
+    container_name: kura-3
+    ports:
+      - "445:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice3
+      - DEVICE_DISPLAY_NAME=testdevice3
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-4:
+    image: kura-drone:latest
+    container_name: kura-4
+    ports:
+      - "446:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice4
+      - DEVICE_DISPLAY_NAME=testdevice4
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-5:
+    image: kura-drone:latest
+    container_name: kura-5
+    ports:
+      - "447:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice5
+      - DEVICE_DISPLAY_NAME=testdevice5
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-6:
+    image: kura-drone:latest
+    container_name: kura-6
+    ports:
+      - "448:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice6
+      - DEVICE_DISPLAY_NAME=testdevice6
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-7:
+    image: kura-drone:latest
+    container_name: kura-7
+    ports:
+      - "449:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice7
+      - DEVICE_DISPLAY_NAME=testdevice7
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-8:
+    image: kura-drone:latest
+    container_name: kura-8
+    ports:
+      - "450:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice8
+      - DEVICE_DISPLAY_NAME=testdevice8
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-9:
+    image: kura-drone:latest
+    container_name: kura-9
+    ports:
+      - "451:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice9
+      - DEVICE_DISPLAY_NAME=testdevice9
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-10:
+    image: kura-drone:latest
+    container_name: kura-10
+    ports:
+      - "452:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice10
+      - DEVICE_DISPLAY_NAME=testdevice10
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-11:
+    image: kura-drone:latest
+    container_name: kura-11
+    ports:
+      - "453:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice11
+      - DEVICE_DISPLAY_NAME=testdevice11
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-12:
+    image: kura-drone:latest
+    container_name: kura-12
+    ports:
+      - "454:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice12
+      - DEVICE_DISPLAY_NAME=testdevice12
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-13:
+    image: kura-drone:latest
+    container_name: kura-13
+    ports:
+      - "455:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice13
+      - DEVICE_DISPLAY_NAME=testdevice13
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-14:
+    image: kura-drone:latest
+    container_name: kura-14
+    ports:
+      - "456:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice14
+      - DEVICE_DISPLAY_NAME=testdevice14
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-15:
+    image: kura-drone:latest
+    container_name: kura-15
+    ports:
+      - "457:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice15
+      - DEVICE_DISPLAY_NAME=testdevice15
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-16:
+    image: kura-drone:latest
+    container_name: kura-16
+    ports:
+      - "458:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice16
+      - DEVICE_DISPLAY_NAME=testdevice16
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-17:
+    image: kura-drone:latest
+    container_name: kura-17
+    ports:
+      - "459:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice17
+      - DEVICE_DISPLAY_NAME=testdevice17
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-18:
+    image: kura-drone:latest
+    container_name: kura-18
+    ports:
+      - "460:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice18
+      - DEVICE_DISPLAY_NAME=testdevice18
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-19:
+    image: kura-drone:latest
+    container_name: kura-19
+    ports:
+      - "461:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice19
+      - DEVICE_DISPLAY_NAME=testdevice19
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-20:
+    image: kura-drone:latest
+    container_name: kura-20
+    ports:
+      - "462:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice20
+      - DEVICE_DISPLAY_NAME=testdevice20
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-21:
+    image: kura-drone:latest
+    container_name: kura-21
+    ports:
+      - "463:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice21
+      - DEVICE_DISPLAY_NAME=testdevice21
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-22:
+    image: kura-drone:latest
+    container_name: kura-22
+    ports:
+      - "464:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice22
+      - DEVICE_DISPLAY_NAME=testdevice22
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-23:
+    image: kura-drone:latest
+    container_name: kura-23
+    ports:
+      - "465:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice23
+      - DEVICE_DISPLAY_NAME=testdevice23
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-24:
+    image: kura-drone:latest
+    container_name: kura-24
+    ports:
+      - "466:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice24
+      - DEVICE_DISPLAY_NAME=testdevice24
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64
+
+  kura-25:
+    image: kura-drone:latest
+    container_name: kura-25
+    ports:
+      - "467:443"
+    environment:
+      - BROKER_URL=mqtt://your-kapua-broker:1883
+      - AUTO_CONNECT_ON_STARTUP=true
+      - DEVICE_CUSTOM_NAME=testdevice25
+      - DEVICE_DISPLAY_NAME=testdevice25
+      - ACCOUNT_NAME=user-account-name
+      - USERNAME=user-account-name
+      - PASSWORD=your-password-in-base64

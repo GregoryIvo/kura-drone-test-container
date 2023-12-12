@@ -1,0 +1,5 @@
+FROM eclipse/kura:latest
+COPY setup.sh .
+COPY snapshot_0.xml .
+RUN chmod +x setup.sh
+ENTRYPOINT ["/setup.sh"]
